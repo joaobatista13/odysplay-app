@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Cosmic Crest Outer Glow -->
+    <path
+        android:fillColor="#122C45"
+        android:strokeColor="#D4AF37"
+        android:strokeWidth="2.5"
+        android:pathData="M48,6 L82,24 L82,72 L48,90 L14,72 L14,24 Z" />
+    
+    <!-- Inner Metallic Diamond Accent -->
+    <path
+        android:fillColor="#072946"
+        android:strokeColor="#4DDDE0"
+        android:strokeWidth="1.8"
+        android:pathData="M48,18 L74,32 L74,64 L48,78 L22,64 L22,32 Z" />
+
+    <!-- Controller / Star Glyph (Dourado & Ciano) -->
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M38,40 L44,40 L44,34 L48,34 L48,40 L54,40 L54,44 L48,44 L48,50 L44,50 L44,44 L38,44 Z" />
+
+    <path
+        android:fillColor="#4DDDE0"
+        android:pathData="M58,42 A4,4 0 1,0 66,42 A4,4 0 1,0 58,42 Z" />
+        
+    <path
+        android:fillColor="#00D9C0"
+        android:pathData="M48,56 L51,62 L57,63 L52,67 L53,73 L48,69 L43,73 L44,67 L39,63 L45,62 Z" />
+</vector>

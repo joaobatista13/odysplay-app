@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Oficial OdysPlay -->
+    <color name="cosmic_blue">#122C45</color>
+    <color name="noble_gold">#D4AF37</color>
+    <color name="emerald_cyan">#4DDDE0</color>
+    <color name="metallic_blue">#072946</color>
+    <color name="turquoise">#00D9C0</color>
+    <color name="alert_red">#AF0000</color>
+
+    <!-- Superfícies e Contrastes -->
+    <color name="dark_background">#0B1B2B</color>
+    <color name="card_surface">#0E243A</color>
+    <color name="card_stroke">#1C3E60</color>
+    <color name="divider_color">#193959</color>
+
+    <!-- Tipografia e Estados -->
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_muted">#64748B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Notificações e Categorias -->
+    <color name="notify_success">#00D9C0</color>
+    <color name="notify_error">#AF0000</color>
+    <color name="notify_warning">#EAB308</color>
+    <color name="notify_info">#D4AF37</color>
+
+    <color name="badge_gamer">#4DDDE0</color>
+    <color name="badge_dev">#D4AF37</color>
+    <color name="badge_empresa">#A855F7</color>
+</resources>

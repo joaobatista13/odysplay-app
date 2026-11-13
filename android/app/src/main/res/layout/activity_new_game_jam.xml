@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cosmic_gradient"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnBackGameJam"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Voltar"
+                android:src="@android:drawable/ic_menu_revert"
+                app:tint="@color/noble_gold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/new_game_jam_title"
+                android:textColor="@color/noble_gold"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Organize maratonas de desenvolvimento, encontre talentos indie e promova seu estúdio."
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <!-- Form Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/card_surface"
+            app:cardCornerRadius="16dp"
+            app:strokeColor="@color/card_stroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <!-- 1. Nome -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilJamTitle"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/jam_name_hint"
+                    app:boxStrokeColor="@color/noble_gold">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etJamTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- 2. Tema -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilJamTheme"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:hint="@string/jam_theme_hint"
+                    app:boxStrokeColor="@color/noble_gold">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etJamTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- 3. Máximo Participantes -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilJamMaxParticipants"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:hint="@string/jam_max_participants_hint"
+                    app:boxStrokeColor="@color/noble_gold">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etJamMaxParticipants"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/text_primary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- 4. Prêmios -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilJamPrizes"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:hint="@string/jam_prizes_hint"
+                    app:boxStrokeColor="@color/noble_gold">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etJamPrizes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- 5. Data Final Inscrições -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilJamEndDate"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:hint="@string/jam_end_date_hint"
+                    app:boxStrokeColor="@color/noble_gold">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etJamEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- 6. Data Anúncio Vencedores -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilJamWinnersDate"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:hint="@string/jam_winners_date_hint"
+                    app:boxStrokeColor="@color/noble_gold">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etJamWinnersDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- 7. Regras -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilJamRules"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:hint="@string/jam_rules_hint"
+                    app:boxStrokeColor="@color/noble_gold">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etJamRules"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="top|start"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/text_primary" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Publish Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSubmitGameJam"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/noble_gold"
+                    android:text="@string/btn_publish_game_jam"
+                    android:textColor="@color/metallic_blue"
+                    android:textStyle="bold"
+                    app:cornerRadius="12dp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

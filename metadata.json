@@ -1,0 +1,6 @@
+{
+  "name": "OdysPlay - App Gamer Android em Java",
+  "description": "Aplicativo Android nativo em Java para comunidade gamer brasileira com Gamers, Devs e Empresas, suporte a Supabase e simulador interativo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
